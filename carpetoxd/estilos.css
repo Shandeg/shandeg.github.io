@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+body {
+background-color: rgb(146, 206, 255);
+text-align: center;
+}
+h1{
+text-align: center;
+padding: 5px 80px;
+font-size: 100px;
+margin: 50px auto 20px auto;
+height: 180px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+font-family: "Slackey", serif;
+font-weight: 400;
+font-style: normal;
+text-shadow: -5px 5px 3px  rgba(48, 96, 141, 0.589);
+}
+.subtitulo{
+font-size: 30px;
+font-family: "Annie Use Your Telescope", serif;
+font-weight: 400;
+font-style: normal;
+
+}
+.descripcionOtto{
+background-color: rgb(229, 240, 250);
+font-size: 26px;
+padding: 5px 80px;
+margin: 50px auto 400px auto;
+
+}
+
+button{
+text-align: center;
+
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
+.PadreOtto{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.ottoimagen{
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+animation: mover 2s infinite alternate;
+transition: transform ease-in-out 0.5s;
+}
+
+.ottoimagen:hover {
+    transform: scale(1.2);
+}
+
+.boton {
+    background-color: #ff4757;
+    color: white;
+    font-family: "slackey", serif;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: left 0.5s ease;
+}
+
+.boton:hover::before {
+    left: 100%;
+}
