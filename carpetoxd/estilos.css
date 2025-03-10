@@ -29,6 +29,16 @@ height: 100vh;
     transform: translate(50%, -50%);
     z-index: 1;
 }
+
+.celular_chiquito {
+    position: absolute;
+font-family: 'Slackey';
+    font-size: 50px;
+    color: #20333f;
+    z-index: 5;
+    text-align: center;
+    display: none;
+}
 .info {
     max-width: 50%;
     position: relative;
@@ -126,5 +136,55 @@ height: 100px;
 }
 
 .cat-image img:hover { 
- height: 67vh;
+    height: 67vh;
+}
+
+@media (max-width: 800px) {
+    .info {
+        font-size: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffff;
+    }
+    .apodos {
+        font-size: 40px;
+    }
+    h1 {
+        margin: 0 auto;
+        font-size: 90px;
+        color: #ffff
+    }
+    .icons {
+        gap: 60px;
+        color: #ffff;
+    }
+    .icon svg {
+        width: 80px;
+        height: 80px;
+    }
+    .icon p {
+        font-size: 50px;
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 50px;
+    }
+    .cat-image img {
+        height: 50vh;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .info {
+        display: none;
+    }
+    .celular_chiquito {
+        display: block;
+    }
+
 }
