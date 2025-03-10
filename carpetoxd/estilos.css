@@ -139,12 +139,16 @@ height: 100px;
     height: 67vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .info {
         font-size: 60px;
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
         color: #ffff;
+    }
+    .celular_chiquito
+    {
+        display: none;
     }
     .apodos {
         font-size: 40px;
@@ -179,7 +183,7 @@ height: 100px;
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .info {
         display: none;
     }
